@@ -1,0 +1,15 @@
+{
+    "autoload": {
+        "psr-4": {
+            "In2it\\PiggyBank\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "In2it\\Test\\PiggyBank\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    }
+}
