@@ -1,0 +1,15 @@
+{
+    "autoload": {
+        "psr-4": {
+            "In2it\\FruitSalad\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "In2it\\Test\\FruitSalad\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    }
+}
