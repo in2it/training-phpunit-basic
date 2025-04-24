@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 require_once __DIR__ . '/Math.php';
 /**
  * Example Math unit test to showcase the usage of PHPUnit
- * File: 01-Introduction/01-Example-Unit-Test/MathTest.php
+ * File: 02-Example-of-unit-test/01-Example-Unit-Test/MathTest.php
  */
 class MathTest extends TestCase
 {
@@ -28,8 +28,8 @@ class MathTest extends TestCase
     public function testDivideByZeroThrowsException(): void
     {
         $math = new Math();
-        $this->expectException(Exception::class);
-        $this->expectExceptionMessage('Can not divide by zero');
+        $this->expectException(DivisionByZeroError::class);
+        $this->expectExceptionMessage('Division by zero');
         $math->divide(4, 0);
         $this->fail('Expected exception was not thrown');
     }
